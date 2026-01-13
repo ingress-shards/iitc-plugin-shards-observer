@@ -13,6 +13,7 @@
         "url": "https://github.com/yeggstry/iitc-shards-observer-plugin/issues"
     },
     "type": "module",
+    "private": true,
     "scripts": {
         "build": "yarn build:dev",
         "build:dev": "yarn ipk build:dev",
@@ -38,6 +39,5 @@
             "main",
             "next"
         ]
-    },
-    "npmPublish": false
+    }
 }
