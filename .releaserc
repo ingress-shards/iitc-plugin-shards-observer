@@ -1,7 +1,11 @@
 {
     "branches": [
         "main",
-        "next"
+        "next",
+        {
+            "name": "feat/*",
+            "prerelease": "alpha"
+        }
     ],
     "plugins": [
         [
@@ -107,11 +111,11 @@
                 "assets": [
                     {
                         "path": "dist/*.user.js",
-                        "label": "IITC Shard Observer Plugin (User Script)"
+                        "label": "IITC Plugin: Shards Observer (User Script)"
                     },
                     {
                         "path": "dist/*.meta.js",
-                        "label": "IITC Shard Observer Plugin (Meta Script)"
+                        "label": "IITC Plugin: Shards Observer (Meta Script)"
                     }
                 ]
             }
