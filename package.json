@@ -1,5 +1,6 @@
 {
     "name": "@ingress-shards/iitc-plugin-shards-observer",
+    "version": "0.0.0-semantically-released",
     "description": "Observes and records shard data from the Ingress Intel map",
     "author": "Lewis Keen",
     "license": "MIT",
