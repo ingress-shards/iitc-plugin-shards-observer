@@ -11,7 +11,7 @@
         [
             "@semantic-release/commit-analyzer",
             {
-                "preset": "angular",
+                "preset": "conventionalcommits",
                 "parserOpts": {
                     "noteKeywords": [
                         "BREAKING CHANGE",
@@ -93,7 +93,7 @@
         [
             "@semantic-release/exec",
             {
-                "prepareCmd": "yarn build:prod"
+                "publishCmd": "yarn build:prod"
             }
         ],
         [
