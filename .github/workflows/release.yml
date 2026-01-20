@@ -17,6 +17,8 @@ permissions:
 jobs:
     release:
         runs-on: ubuntu-latest
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         steps:
             - uses: actions/checkout@v4
               with:
@@ -27,11 +29,9 @@ jobs:
                   node-version: "lts/*"
 
             - run: corepack enable
-            - run: yarn install --immutable --frozen-lockfile
+            - run: yarn install --immutable && yarn info
 
             - name: Tag release
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: yarn semantic-release
 
             - name: Upload Pages Artifact

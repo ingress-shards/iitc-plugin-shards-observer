@@ -93,7 +93,7 @@
         [
             "@semantic-release/exec",
             {
-                "publishCmd": "yarn build:prod"
+                "prepareCmd": "yarn build:prod"
             }
         ],
         [
